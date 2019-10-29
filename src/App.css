@@ -1,12 +1,16 @@
+
 .App {
   text-align: center;
+  background: chartreuse;
+  padding-top:0px;
+  padding-bottom:10px;
 }
 
-.App-logo {
+/*.App-logo {
   height: 40vmin;
-}
+}*/
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -15,8 +19,78 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} 
 
 .App-link {
   color: #09d3ac;
+}*/
+.navbar {
+  margin-top: 0px;
+  padding:10 40px;
+}
+#brand-style {
+  margin-left:16% ;
+}
+#nav-game-btn, #nav-add-btn {
+  color: red;
+  border:0;
+  padding:2px;
+}
+#nav-game-btn {
+  margin-bottom:0;
+}
+#nav-add-btn {
+  margin:0;
+}
+/* #generate-btn {
+  background-color: rgb(233, 236, 239);
+  border-radius: 4px;
+} */
+#inlineFormInput, #post-type {
+  background-color: rgb(233,236,239);
+}
+select {
+  background-color: rgb(233,236,239);
+}
+#add-page, #add-page-b {
+  margin-top:14px;
+}
+#app-bg {
+  width:50%;
+  margin-left: 20%;
+}
+#new-form {
+  width: 100%;
+}
+#burger-btn {
+  margin:0;
+  padding:0;
+}
+#mood-btn {
+  margin-top: 10px;
+  width: 100px;
+}
+.col-12 select {
+  margin-left: 14px;
+}
+#select-submit {
+  max-width: 500px;
+}
+#select-submit select {
+  text-align: center;
+}
+
+#state-style {
+  margin-left:2%;
+}
+.input-group textarea {
+  margin-right: 4%;
+}
+#mood-style {
+  margin-left: 10%;
+  margin-top: 10px;
+}
+.input-group input {
+  margin-right: 20%;
+  margin-top: 0px;
 }
