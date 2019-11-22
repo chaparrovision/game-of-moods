@@ -4,26 +4,10 @@
   background: chartreuse;
   padding-top:0px;
   padding-bottom:10px;
+  /*max-height: 50%;  this code does nothing */
+  height:50%;
 }
 
-/*.App-logo {
-  height: 40vmin;
-}*/
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} 
-
-.App-link {
-  color: #09d3ac;
-}*/
 .navbar {
   margin-top: 0px;
   padding:10 40px;
@@ -53,7 +37,7 @@ select {
   background-color: rgb(233,236,239);
 }
 #add-page, #add-page-b {
-  margin-top:14px;
+  margin-top:0px;
 }
 #app-bg {
   width:50%;
@@ -61,6 +45,7 @@ select {
 }
 #new-form {
   width: 100%;
+  margin-top: 10px;
 }
 #burger-btn {
   margin:0;
@@ -70,6 +55,7 @@ select {
   margin-top: 10px;
   width: 100px;
 }
+
 .col-12 select {
   margin-left: 14px;
 }
@@ -79,9 +65,9 @@ select {
 #select-submit select {
   text-align: center;
 }
-
 #state-style {
   margin-left:2%;
+  margin-top: 10px;
 }
 .input-group textarea {
   margin-right: 4%;

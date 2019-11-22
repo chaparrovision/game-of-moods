@@ -1,19 +1,25 @@
 import * as React from 'react';
 import Axios from 'axios';
+import {toast, ToastContainer} from 'react-toastify';
 
+//Create and export a new interface called IAddState
 export interface IAddState {
     addTo: string;
     addVal: string;
+    //message: string;
 }
+
+//Create and export a new class called Add, which extends React.Component
 export default class Add extends React.Component<any, IAddState>{
     constructor(props: any){
         super(props);
         this.state = {
             addTo: "",
             addVal: ""
+            //message: ""
         };
     }
-
+//Updates the state
     updateState(e: any) {
         this.setState({
             ...this.state,
@@ -33,6 +39,14 @@ export default class Add extends React.Component<any, IAddState>{
             method:"post",
             url: url,
             data: data
+        })
+        .then(response => {
+            if (response.status === 200) {
+               //console.log("Successful input dudes!");
+               toast.success("Your mood or statement has been added to the Game of Moods.", {
+                   position: toast.POSITION.TOP_CENTER
+               });
+            }
         })
     }
 
@@ -66,7 +80,9 @@ export default class Add extends React.Component<any, IAddState>{
                                 Submit
                          </button>
                     </form>
-                {/*</div> */}
+                    <div><ToastContainer className={"toaster"} autoClose={3500} /></div>
+                {/*</div> Sunday, put the line of code here*/}
+                
             </div>
         );
     }

@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  /*max-height: 50%; this code not effective either for alert placement */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
